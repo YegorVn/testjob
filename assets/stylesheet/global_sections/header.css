@@ -1,0 +1,206 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  
+}
+
+/* containers */
+.header__section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 97.5rem;
+  width: 100%;
+}
+
+.header__section_upper {
+  max-width: 100%;
+  width: 100%;
+  padding: 0.75rem calc(calc(100vw - 97.5rem) / 2);
+  position: relative;
+}
+
+.header__section_upper::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  background-color: var(--grey);
+}
+
+.header__section_lower {
+  position: relative;
+  margin: 1.5rem 0 0 0;
+}
+
+.header__section_tags {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  margin: 1.625rem 0 0 0;
+}
+
+.header__nav {
+  margin: 0 0 0 auto;
+}
+
+.header__badges {
+  display: flex;
+  margin: 0 0 0 2.5rem;
+}
+
+/* pieces */
+.header__contact {
+  margin: 0 0 0 2.5rem;
+}
+
+.header__contact:first-child {
+  margin: 0;
+}
+
+.header__link {
+  margin: 0 0 0 1.875rem;
+}
+
+.header__link:first-child {
+  margin: 0;
+}
+
+.header__logo {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+
+.header__btn-block {
+  height: 100%;
+  width: 10rem;
+  margin: 0 0 0 2.125rem;
+}
+
+.header__input {
+  max-width: 57.188rem;
+  width: 100%;
+  margin: 0 0 0 1.5rem;
+}
+
+.header__badge {
+  margin: 0 0 0 1.875rem;
+}
+
+.header__tag:first-child {
+  margin: 0;
+}
+
+/* Если будет нужно переиспользовать, то можно разделить по файлам */
+/* phone */
+.header__phone {
+  display: flex;
+  height: 3.125rem;
+  padding: 0.875rem 1.5rem;
+  background-color: var(--pink);
+  border-radius: 1rem;
+  color: var(--white);
+  font-size: var(--text-m);
+  margin: 0 0 0 auto;
+  white-space: nowrap;
+}
+
+.header__phone::before {
+  display: block;
+  position: relative;
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0.625rem 0 0;
+  background-image: url("../../icons/telephone.svg");
+}
+
+/* badge */
+.badge {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.badge__icon {
+}
+
+.badge__text {
+  margin: 0.313rem 0 0 0;
+  font-size: var(--text-m);
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    overflow-x: hidden;
+    padding: 0 0.625rem;
+  }
+
+  .header__section {
+    width: 100%;
+  }
+
+  .header__section_upper{
+    justify-content: space-between;
+    padding: 0.5rem;
+  }
+
+  .header__section_lower{
+    margin: 0.625rem 0 0 0;
+  }
+
+  .header__section_upper::before {
+    display: none !important;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  .header__logo{
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .header__contact{
+    margin: 0;
+  }
+
+  .header__btn-block {
+    margin: 0;
+  }
+
+  .header__input {
+    flex-basis: auto;
+    margin: 0 0 0 0.5rem;
+  }
+
+  .header__badges {
+    display: none;
+  }
+
+  .header__section_tags {
+    flex-flow: row nowrap;
+    overflow-x: scroll;
+    row-gap: 0.75rem;
+    margin: 0.625rem 0 0 0;
+  }
+
+  .header__section_tags::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tag {
+  }
+
+  .header__tag {
+    white-space: nowrap;
+  }
+}

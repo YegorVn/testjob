@@ -1,0 +1,178 @@
+.basket {
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  top: calc(100% + 7.375rem);
+  right: 0;
+  max-width: 49.125rem;
+  width: 100%;
+  height: 48.375rem;
+  padding: 1.875rem 0 0 0;
+  background-color: var(--white);
+  border-radius: 1.875rem;
+  box-shadow: 5px 15px 70px 0px rgba(173, 178, 201, 0.35);
+  z-index: 10000;
+}
+
+.basket_shown{
+  opacity: 1;
+  transition: opacity 0.25s;
+  z-index: 10000;
+}
+
+.basket_hidden{
+  opacity: 0;
+  z-index: -1;
+  transition: 0.25s;
+  transition-delay: 1s;
+}
+
+.basket__header {
+  display: flex;
+  align-items: center;
+  padding: 0 1.875rem;
+}
+
+.basket__title {
+  font-size: var(--text-xl);
+  font-weight: var(--semi-bold);
+}
+
+.basket__count {
+  font-size: var(--text-m);
+  margin: 0.25rem 0 0 0.5rem;
+}
+
+.basket__body {
+  position: relative;
+  margin: 1.5rem 0 0 0;
+  padding: 0 2.625rem 0 1.875rem;
+}
+
+.basket__body::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 100%;
+  top: 0;
+  right: 1.25rem;
+  background-color: var(--line);
+}
+
+.basket__lower {
+  margin: auto 0 0 0;
+  padding: 1.875rem;
+  box-shadow: 0 -5rem 5rem 0px var(--grey);
+}
+
+.basket__total {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.basket__btns {
+  margin: 1.25rem 0 0 0;
+  display: flex;
+  column-gap: 1.25rem;
+}
+
+.basket__btn-block{
+  flex: 1 1 auto;
+}
+
+.basket__total-text {
+  font-size: var(--text-l);
+  color: var(--dark-grey);
+}
+
+.basket__total-price {
+  font-size: var(--text-xl);
+  font-weight: var(--bold);
+  margin: 0 0 0 1.25rem;
+}
+
+/* long-card */
+.long-card {
+  display: flex;
+  padding: 1.625rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.long-card:last-of-type {
+  border-bottom: 1px solid var(--line);
+}
+
+.long-card__figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6.25rem;
+  flex: 0 0 6.25rem;
+  border: 2px solid var(--grey);
+  border-radius: 1.875rem;
+}
+
+.long-card__img {
+}
+
+.long-card__body {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 0 0 1rem;
+}
+
+.long-card__col {
+  display: flex;
+  flex-flow: column;
+}
+
+.long-card__col_first {
+    width: 25rem;
+}
+
+.long-card__col_second {
+  margin: 0 0 0 auto;
+}
+
+.long-card__title {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: var(--text-m);
+}
+
+.long-card__tags {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0 0 0;
+}
+
+.long-card__tag:first-child {
+  margin: 0 0 0 0;
+}
+
+.long-card__count {
+  margin: 1rem 0 0 auto;
+}
+
+.long-card__price {
+  white-space: nowrap;
+}
+
+.long-card__new-price {
+  font-size: var(--text-l);
+}
+
+.long-card__old-price {
+  font-size: var(--text-s);
+  margin: 0 0 0 auto;
+}
+
+.long-card__trash {
+  flex: 0 0 auto;
+  margin: 0 0 0 1.875rem;
+}

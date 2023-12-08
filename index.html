@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./assets/stylesheet/style.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.svg" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rewire</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__section header__section_upper">
+        <a href="" class="link link_v1 link_icon header__contact">
+          <i class="ic ic-location"></i>
+          <span>Магазины</span>
+        </a>
+        <img
+          src="./assets/images/logo.svg"
+          class="header__logo d-block d-md-none"
+          alt="не удалось загрузить изображение" />
+        <a href="" class="link link_v1 link_icon header__contact">
+          <i class="ic ic-email"></i>
+          <span>info@kraskizdes.ru</span>
+        </a>
+        <nav class="header__nav">
+          <a href="" class="link link_v1 header__link">Доставка</a>
+          <a href="" class="link link_v1 header__link">Оплата</a>
+          <a href="" class="link link_v1 header__link">Возврат</a>
+          <a href="" class="link link_v1 header__link">Помощь</a>
+          <a href="" class="link link_v1 header__link">О нас</a>
+          <a href="" class="link link_v1 header__link">Для бизнеса</a>
+        </nav>
+      </div>
+      <div class="header__section header__section_lower">
+        <img
+          src="./assets/images/logo.svg"
+          class="header__logo d-none d-md-block"
+          alt="не удалось загрузить изображение" />
+        <button
+          class="btn-block btn-block_menu btn-block_pink header__btn-block">
+          <span> Каталог </span>
+        </button>
+        <div class="input input_search header__input">
+          <input class="input__field" type="text" placeholder="Искать товары" />
+          <button class="input__btn"></button>
+        </div>
+        <div class="header__badges">
+          <button class="badge header__badge">
+            <i class="badge__icon ic ic-person"></i>
+            <span class="badge__text">Войти</span>
+          </button>
+          <button class="badge header__badge">
+            <i class="badge__icon ic ic-heart"></i>
+            <span class="badge__text">Избранное</span>
+          </button>
+          <button class="badge header__badge" id="basket-button">
+            <i class="badge__icon ic ic-bag"></i>
+            <span class="badge__text">Корзина</span>
+          </button>
+        </div>
+        <div class="basket basket_hidden" id="basket">
+          <header class="basket__header">
+            <div class="basket__title">Корзина</div>
+            <div class="basket__count">6</div>
+          </header>
+          <div class="basket__body">
+            <div class="long-card basket__long-card">
+              <div class="long-card__figure">
+                <img
+                  src="./assets/images/paints/paint_3.png"
+                  alt="не удалось загузить изображение"
+                  class="long-card__img" />
+              </div>
+              <div class="long-card__body">
+                <div class="long-card__col long-card__col_first">
+                  <div class="long-card__title">
+                    Flugger Dekso 25 Краска полуматовая с очень высокой
+                    прочностью для внутренних работ
+                  </div>
+                  <div class="long-card__tags">
+                    <div class="long-card__tag">2.8 л</div>
+                    <div class="long-card__tag">Полуматовый</div>
+                    <div class="long-card__tag">Flugger 900 FL 1443</div>
+                  </div>
+                </div>
+                <div class="long-card__col long-card__col_second">
+                  <div class="long-card__price">
+                    <div class="long-card__new-price">3 360 ₽</div>
+                    <div class="long-card__old-price old-price">3 850 ₽</div>
+                  </div>
+
+                  <div class="long-card__count">1шт</div>
+                </div>
+              </div>
+              <button class="long-card__trash">
+                <i class="ic ic-trash"></i>
+              </button>
+            </div>
+            <div class="long-card basket__long-card">
+              <div class="long-card__figure">
+                <img
+                  src="./assets/images/paints/paint_3.png"
+                  alt="не удалось загузить изображение"
+                  class="long-card__img" />
+              </div>
+              <div class="long-card__body">
+                <div class="long-card__col long-card__col_first">
+                  <div class="long-card__title">
+                    Flugger Dekso 25 Краска полуматовая с очень высокой
+                    прочностью для внутренних работ
+                  </div>
+                  <div class="long-card__tags">
+                    <div class="long-card__tag">2.8 л</div>
+                    <div class="long-card__tag">Полуматовый</div>
+                    <div class="long-card__tag">Flugger 900 FL 1443</div>
+                  </div>
+                </div>
+                <div class="long-card__col long-card__col_second">
+                  <div class="long-card__price">
+                    <div class="long-card__new-price">3 360 ₽</div>
+                    <div class="long-card__old-price old-price">3 850 ₽</div>
+                  </div>
+                  <div class="long-card__count">1шт</div>
+                </div>
+              </div>
+              <button class="long-card__trash">
+                <i class="ic ic-trash"></i>
+              </button>
+            </div>
+          </div>
+          <div class="basket__lower">
+            <div class="basket__total">
+              <div class="basket__total-text">Итого:</div>
+              <div class="basket__total-price">40 780 ₽</div>
+            </div>
+            <div class="basket__btns">
+              <button class="btn-block btn-block_arrow basket__btn-block">
+                Купить в 1 клик
+              </button>
+              <button class="btn-block btn-block_basket basket__btn-block">
+                Перейти в корзину
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__section header__section_tags">
+        <button class="tag header__tag">
+          <i class="tag__icon ic ic-fire"></i>
+          <span class="tag__text">Акции</span>
+        </button>
+        <button class="tag header__tag">
+          <i class="tag__icon ic ic-paint"></i>
+          <span class="tag__text">бренды</span>
+        </button>
+        <button class="tag header__tag">
+          <i class="tag__icon ic ic-diamond"></i>
+          <span class="tag__text">Premium бренды</span>
+        </button>
+        <button class="tag header__tag">
+          <i class="tag__icon ic ic-color-filter"></i>
+          <span class="tag__text">Подбор по параметрам</span>
+        </button>
+        <button class="header__phone">8 (495) 120-81-55</button>
+      </div>
+    </header>
+    <section class="section section-slider">
+      <div
+        class="product-card product-card-discount section-slider__product-card-discount">
+        <div class="product-card-discount__text">
+          <div class="product-card-discount__price discount-price">
+            <div class="discount-price__start">до</div>
+            <div class="discount-price__end">
+              <span>25</span>
+              <sup>%</sup>
+            </div>
+          </div>
+          <div class="product-card-discount__gradient"></div>
+          <div class="product-card-discount__sign">
+            Скидки на выделенные товары Benjamine Moore
+          </div>
+        </div>
+        <img
+          class="product-card-discount__img"
+          src="./assets/images/paints/paint_2.png" />
+        <button class="product-card__btn"></button>
+      </div>
+      <div class="section-slider__body">
+        <div class="section-slider__body-content">
+          <div
+            class="product-card product-card-product section-slider__product-card-product">
+            <div class="product-card-product__figure">
+              <div class="product-card-product__discount">-25%</div>
+              <img
+                src="./assets/images/paints/paint_1.png"
+                class="product-card-product__img" />
+            </div>
+            <header class="product-card-product__header">
+              <div class="product-card-product__title">
+                Benjamin Moore Regal Select 549 Waterborne Interior Paint
+                Eggshell
+              </div>
+              <div class="product-card-product__volume">
+                <span>0.95л</span>
+                <span>2л</span>
+                <span>6л</span>
+              </div>
+            </header>
+            <div class="product-card-product__lower">
+              <div class="product-card-product__new-price">от 3600 ₽</div>
+              <div class="product-card-product__old-price old-price">
+                4500 ₽
+              </div>
+            </div>
+            <button class="product-card__btn"></button>
+          </div>
+          <div
+            class="product-card product-card-product section-slider__product-card-product">
+            <div class="product-card-product__figure">
+              <div class="product-card-product__discount">-25%</div>
+              <img
+                src="./assets/images/paints/paint_1.png"
+                class="product-card-product__img" />
+            </div>
+            <header class="product-card-product__header">
+              <div class="product-card-product__title">
+                Benjamin Moore Regal Select 549 Waterborne Interior Paint
+                Eggshell
+              </div>
+              <div class="product-card-product__volume">
+                <span>0.95л</span>
+                <span>2л</span>
+                <span>6л</span>
+              </div>
+            </header>
+            <div class="product-card-product__lower">
+              <div class="product-card-product__new-price">от 3600 ₽</div>
+              <div class="product-card-product__old-price old-price">
+                4500 ₽
+              </div>
+            </div>
+            <button class="product-card__btn"></button>
+          </div>
+          <div
+            class="product-card product-card-product section-slider__product-card-product">
+            <div class="product-card-product__figure">
+              <div class="product-card-product__discount">-25%</div>
+              <img
+                src="./assets/images/paints/paint_1.png"
+                class="product-card-product__img" />
+            </div>
+            <header class="product-card-product__header">
+              <div class="product-card-product__title">
+                Benjamin Moore Regal Select 549 Waterborne Interior Paint
+                Eggshell
+              </div>
+              <div class="product-card-product__volume">
+                <span>0.95л</span>
+                <span>2л</span>
+                <span>6л</span>
+              </div>
+            </header>
+            <div class="product-card-product__lower">
+              <div class="product-card-product__new-price">от 3600 ₽</div>
+              <div class="product-card-product__old-price old-price">
+                4500 ₽
+              </div>
+            </div>
+            <button class="product-card__btn"></button>
+          </div>
+        </div>
+        <button
+          class="btn-slide btn-slide-right section-slider__btn-slide-right"></button>
+        <button
+          class="btn-slide btn-slide-left section-slider__btn-slide-left btn-slide_hidden"></button>
+      </div>
+    </section>
+    <script src="./script/script.js" defer></script>
+  </body>
+</html>

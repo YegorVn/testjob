@@ -1,0 +1,28 @@
+.btn-slide{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    background-image: url("../../../icons/arrow_2.svg");
+    background-color: var(--white);
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 3px 6px 14px rgba(115, 103, 151, 0.15);
+}
+
+.btn-slide_hidden{
+    transition: 0.25s;
+    opacity: 0;
+}
+
+.btn-slide_shown{
+    transition: 0.25s;
+    opacity: 1;
+}
+
+.btn-slide-left{
+    background-image: url("../../../icons/arrow_2.svg");
+}
+
+.btn-slide-right{
+    background-image: url("../../../icons/arrow_2.svg");
+}

@@ -1,0 +1,121 @@
+.btn-block {
+  height: 3.75rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: var(--text-m);
+  border-radius: 0.938rem;
+  color: var(--white);
+}
+
+.btn-block::after {
+  content: "";
+  position: relative;
+  height: 3.125rem;
+  width: 3.125rem;
+  background-color: var(--white);
+  border-radius: 0.625rem;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* colors */
+.btn-block_pink {
+  background: var(--pink);
+}
+
+/* spacing */
+/* default */
+.btn-block_default {
+  padding: 0 0.313rem 0 1.875rem;
+  justify-content: center;
+}
+
+/* centered */
+.btn-block_centered {
+  padding: 0.313rem;
+  justify-content: center;
+}
+
+.btn-block_centered::after {
+  position: absolute;
+  right: 0.313rem;
+}
+
+/* menu */
+.btn-block_menu {
+  padding: 0.313rem 0.313rem 0.313rem 1.25rem;
+}
+
+.btn-block_menu::after {
+  margin: 0 0 0 0.875rem;
+}
+
+/* arrow, basket */
+.btn-block_arrow,
+.btn-block_basket {
+  justify-content: center;
+}
+
+.btn-block_arrow{
+  background: var(--button-gradient);
+}
+
+.btn-block_basket {
+  background-color: var(--white);
+  color: var(--pink);
+}
+
+.btn-block_basket::before {
+  position: absolute;
+  content: "";
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  top: -2px;
+  left: -2px;
+  background: var(--button-gradient);
+  background: var(--button-gradient);
+  border-radius: 0.938rem;
+  z-index: -1;
+}
+
+.btn-block_arrow::after,
+.btn-block_basket::after {
+  position: absolute;
+  right: 0.313rem;
+}
+
+/* icons and colors */
+.btn-block_menu::after {
+  background-image: url("../../../icons/cards.svg");
+}
+
+.btn-block_arrow::after {
+  background-color: var(--white);
+  background-image: url('../../../icons/arrow.svg');
+}
+
+.btn-block_basket::after {
+  background-image: url('../../../icons/bag.svg'), var(--button-gradient);
+ 
+}
+
+
+@media screen and (max-width: 768px) {
+  .btn-block_menu {
+    width: 2.625rem;
+    height: 2.625rem;
+    border-radius: 0.625rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../../../icons/burger_menu.svg");
+  }
+
+  .btn-block_menu span {
+    display: none;
+  }
+
+  .btn-block_menu::after {
+    display: none;
+  }
+}

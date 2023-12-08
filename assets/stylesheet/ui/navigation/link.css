@@ -1,0 +1,30 @@
+.link {
+}
+
+.link_v1 {
+    color: var(--black);
+    font-size: var(--text-s);
+    transition: 100ms;
+}
+
+.link_v1:hover {
+    color: var(--dark-grey);
+}
+
+/* link_icon */
+.link_icon {
+  display: flex;
+  align-items: center;
+}
+
+.link_icon>span{
+  margin: 0 0 0 0.313rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .link_icon>span{
+    display: none;
+  }
+  
+}

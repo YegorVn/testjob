@@ -1,0 +1,30 @@
+.tag{
+    display: flex;
+    align-items: center;
+    padding: 0.875rem 1.5rem;
+    background-color: var(--grey);
+    border-radius: 1rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border 100ms;
+}
+
+.tag:hover{
+    border: 1px solid var(--dark-grey);
+}
+
+.tag__text{
+    margin: 0 0 0 0.373rem;
+    font-size: var(--text-s);
+}
+
+.tag__text::first-letter {
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+    .tag{
+        padding: 0.5rem 0.75rem;
+    }
+}
+

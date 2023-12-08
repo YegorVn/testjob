@@ -1,0 +1,36 @@
+@import url("./variables.css");
+@import url("./global.css");
+@import url("./icons.css");
+@import url("./modifiers.css");
+
+/* global_sections */
+@import url("./global_sections/header.css");
+@import url("./global_sections/footer.css");
+@import url("./global_sections/basket.css");
+
+/* sections */
+@import url("./sections/slider.css");
+
+/* btns */
+@import url("./ui/btns/btn-block.css");
+@import url("./ui/btns/btn-default.css");
+@import url("./ui/btns/btn-slide.css");
+
+/* form */
+@import url("./ui/form/input.css");
+@import url("./ui/form/radio-btn.css");
+@import url("./ui/form/checkbox.css");
+
+/* navigation */
+@import url("./ui/navigation/link.css");
+
+/* elements */
+@import url("./elements/product-card.css");
+
+/* fonts */
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
+
+
+@import url("./ui/tag.css");
+@import url("./ui/ui.css");
+

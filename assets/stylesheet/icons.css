@@ -1,0 +1,54 @@
+.ic {
+  display: block;
+  background-position: center;
+  background-size: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.ic-person {
+  background-image: url("../icons/account.svg");
+}
+
+.ic-heart {
+  background-image: url("../icons/heart_fill.svg");
+}
+
+.ic-bag {
+  background-image: url("../icons/bag.svg");
+}
+
+.ic-fire {
+  background-image: url("../icons/fire_solid.svg");
+}
+
+.ic-paint {
+  background-image: url("../icons/paint_fill.svg");
+}
+
+.ic-diamond {
+  background-image: url("../icons/diamond_fill.svg");
+}
+
+.ic-color-filter {
+  background-image: url("../icons/color_filter.svg");
+}
+
+.ic-location {
+  background-image: url("../icons/location.svg");
+}
+
+.ic-email {
+  background-image: url("../icons/email.svg");
+}
+
+.ic-trash {
+  background-image: url("../icons/trash.svg");
+}
+
+@media screen and (max-width: 768px) {
+  .ic {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}
